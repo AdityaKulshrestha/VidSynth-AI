@@ -65,3 +65,4 @@ If you encounter bugs or have any feature requests, feel free to open an issue i
 - [Codex Graph](https://www.arxiv.org/pdf/2408.03910)
 - https://github.com/modelscope/modelscope-agent/tree/master
 - [How to understand codebases](https://arxiv.org/html/2406.01422v1)
+- [Medium article on undestanding codebases using Knowledge Graph with papers](https://medium.com/@ziche94/building-knowledge-graph-over-a-codebase-for-llm-245686917f96)
