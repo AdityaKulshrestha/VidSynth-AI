@@ -68,3 +68,4 @@ If you encounter bugs or have any feature requests, feel free to open an issue i
 - [Medium article on undestanding codebases using Knowledge Graph with papers](https://medium.com/@ziche94/building-knowledge-graph-over-a-codebase-for-llm-245686917f96)
 - [GroundCrew for Repository with Video](https://github.com/prolego-team/groundcrew)
 - [Lightning RAG on codebase](https://lightning.ai/lightning-ai/studios/chat-with-your-code-using-rag)
+- [RAG on Code - Really good paper](https://code-rag-bench.github.io/)
