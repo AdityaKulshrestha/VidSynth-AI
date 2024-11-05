@@ -69,3 +69,4 @@ If you encounter bugs or have any feature requests, feel free to open an issue i
 - [GroundCrew for Repository with Video](https://github.com/prolego-team/groundcrew)
 - [Lightning RAG on codebase](https://lightning.ai/lightning-ai/studios/chat-with-your-code-using-rag)
 - [RAG on Code - Really good paper](https://code-rag-bench.github.io/)
+- [RAG on Code using PotPie](https://github.com/potpie-ai/potpie)
