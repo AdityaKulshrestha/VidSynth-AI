@@ -54,7 +54,7 @@ In your PR description, explain the changes you made and why they are necessary.
 Please reference any related issues (e.g., Fixes #123).
 Guidelines
 Please ensure that your code passes all existing tests and adds new ones if applicable.
-Keep your changes minimal, focused, and relevant to the issue or feature you're addressing.
+Keep your changes minimal, focused, and relevant to your issue or feature.
 If you add a new feature, please update the documentation accordingly.
 Reporting Issues
 If you encounter bugs or have any feature requests, feel free to open an issue in this repository. When reporting an issue, please provide sufficient details to reproduce the problem.
@@ -70,3 +70,8 @@ If you encounter bugs or have any feature requests, feel free to open an issue i
 - [Lightning RAG on codebase](https://lightning.ai/lightning-ai/studios/chat-with-your-code-using-rag)
 - [RAG on Code - Really good paper](https://code-rag-bench.github.io/)
 - [RAG on Code using PotPie](https://github.com/potpie-ai/potpie)
+
+
+## RAG on Code - Tutorials
+- [Sankalp - RAG on codebases (Part 1)](https://sankalp1999.notion.site/Learnings-from-codeQA-Part-1-5eb12ceb948040789d0a0aca1ac23329#8ab65a66ee2248ebbab79daf4c15bd0f)
+- [Sankalp - RAG on codebases (Part 2)](https://blog.lancedb.com/rag-codebase-1/)
