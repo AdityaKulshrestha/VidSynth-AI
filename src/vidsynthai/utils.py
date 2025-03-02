@@ -36,3 +36,12 @@ def write_code_to_file(file_path: str, code: str):
     with open(file_path, 'w') as file:
         file.write(code)
     return "Successfully done!"
+
+
+def extract_transcript(text: str):
+    pattern = r"<TRANSCRIPT>(.*?)</TRANSCRIPT>"
+
+    match = re.findall(pattern, text, re.DOTALL)
+    if match:
+        # print(match.group(1))  # Extracted content
+        return ''.join(match)

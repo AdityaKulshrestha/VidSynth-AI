@@ -5,25 +5,21 @@ from kokoro import KPipeline
 
 
 class AudioGenerator:
-    def __init__(self, output_dir, voice='af_heart', speed=1, sample_rate=24000):
+    def __init__(self, voice='af_heart', speed=1, sample_rate=24000):
         """
         Initializes the AudioGenerator class.
 
         Args:
-            output_dir (str): The directory where the final audio will be saved.
             voice (str, optional): The TTS voice to use. Defaults to 'af_heart'.
             speed (int, optional): The speed of speech. Defaults to 1.
             sample_rate (int, optional): The sample rate of the output audio. Defaults to 24000.
         """
-        self.output_dir = output_dir
         self.voice = voice
         self.speed = speed
         self.sample_rate = sample_rate
-        self.pipeline = KPipeline(lang_code='a')  # Modify language as needed
-        
-        os.makedirs(self.output_dir, exist_ok=True)
+        self.pipeline = KPipeline(lang_code='a')  # Modify language as needed       
 
-    def generate_audio(self, text):
+    def generate_audio(self, text, output_dir):
         """
         Generates and saves synthesized speech audio from text.
 
@@ -33,6 +29,7 @@ class AudioGenerator:
         Returns:
             str: The path to the final merged audio file.
         """
+        os.makedirs(output_dir, exist_ok=True)
         generator = self.pipeline(text, voice=self.voice, speed=self.speed, split_pattern=r'\n+')
         
         audio_segments = []
@@ -43,7 +40,7 @@ class AudioGenerator:
             audio_segments.append(silence)  # Add a 1-second pause
 
         merged_audio = np.concatenate(audio_segments)
-        output_path = os.path.join(self.output_dir, "final_audio.wav")
+        output_path = os.path.join(output_dir, "final_audio.wav")
         sf.write(output_path, merged_audio, self.sample_rate)
 
         return output_path
@@ -70,7 +67,7 @@ if __name__ == "__main__":
     The final solutions are boxed two and boxed three."""
 
     output_directory = "media_output/videos/animation_v7/1080p60"
-    audio_gen = AudioGenerator(output_directory)
-    audio_file = audio_gen.generate_audio(text_input)
+    audio_gen = AudioGenerator()
+    audio_file = audio_gen.generate_audio(text_input, output_directory)
 
     print(f"Audio saved at: {audio_file}")
