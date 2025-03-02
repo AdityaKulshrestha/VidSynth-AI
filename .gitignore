@@ -1,0 +1,8 @@
+experiments/
+.mypy_cache
+.venv
+__pycache__
+media_output
+.env
+app.log
+.python-version

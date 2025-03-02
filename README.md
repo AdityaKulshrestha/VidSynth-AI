@@ -3,6 +3,15 @@ VidSynth AI empowers creators by transforming raw ideas into polished videos wit
 
 # Installation
 
+1. pip install uv
+2. Create env `python -m venv .venv`
+3. Activate environment `.venv\Scripts\activate`
+4. `uv pip install`
+5. `python -m src.vidsynthai.main`
+
+NOTE: To run the animated in manin:
+```manim -pql experiments\animation.py QuadraticEquationSolution```
+
 
 
 # Working 
